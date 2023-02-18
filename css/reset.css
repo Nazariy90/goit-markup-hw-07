@@ -1,0 +1,31 @@
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+/* Body */
+body {
+    background-color: var(--white-fon);
+    color: var(--p-text-color);
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+a:link {
+    text-decoration: none;
+}

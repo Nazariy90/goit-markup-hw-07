@@ -1,0 +1,280 @@
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+    padding: 0;
+}
+
+.project-box {
+    background-color: var(--white-fon);
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border: 1px solid var(--color-E7E9FC);
+    border-top: none;
+    padding-left: 16px;
+
+}
+
+.project-title {
+    margin-bottom: 8px;
+    color: var(--nav-text-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.project-item {
+    transition: box-shadow var(--efect-transmision);
+}
+
+
+.project-item:hover,
+.project-item:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.list-button {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ХЕДР ФЛЕКС */
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.list-header {
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+
+}
+
+.navigator:not(:last-child) {
+    margin-right: 40px;
+}
+
+.nav-link {
+    color: var(--nav-text-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    display: block;
+    padding: 24px 0;
+
+    transition: color var(--efect-transmision);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: var(--color-404BBF);
+}
+
+.active {
+    position: relative;
+    color: var(--color-404BBF);
+}
+
+.active::after {
+    content: '';
+    display: block;
+    height: 4px;
+    border-radius: 2px;
+    width: 100%;
+    background-color: var(--color-404BBF);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+
+}
+
+
+address {
+    margin-left: auto;
+}
+
+.list-header-contact {
+
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.contact-item:not(:last-child) {
+    margin-right: 40px;
+
+}
+
+
+/* ХEДР ФЛЕКС */
+
+
+
+
+
+/* logo */
+.logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    color: var(--nav-text-color);
+    margin-right: 76px;
+}
+
+.logo .logo-partone {
+    color: var(--blu-color);
+}
+
+/* logo footer */
+
+
+/* FOOTER */
+
+
+/* хедр */
+.part-header {
+    border-bottom: 1px solid var(--color-E7E9FC);
+}
+
+
+
+.contact-link {
+    color: var(--p-text-color);
+    letter-spacing: 0.02em;
+    font-style: normal;
+
+    transition: color var(--efect-transmision);
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: var(--color-404BBF);
+}
+
+
+/* Hero */
+
+
+
+.portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+
+}
+
+/* соцмережі футер */
+
+.footer-icon {
+    fill: var(--color-F4F4FD);
+    width: 24px;
+    height: 24px;
+
+}
+
+
+
+
+/* customers */
+
+
+
+
+
+
+
+
+/* advantages */
+
+
+
+
+.img-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay {
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    transform: translate(0, 100%);
+    transition: transform var(--efect-transmision);
+
+    color: #F4F4FD;
+    background-color: var(--blu-color);
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.project-link:hover .overlay,
+.project-link:focus .overlay {
+    transform: translate(0, 0);
+}
+
+/* windov */
+/* modal form */
+.modal-form-desk {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: var(--customers-icon-color);
+}
+
+
+/* footer-conect */
+
+.footer-conect {
+    margin-left: 80px;
+}
+
+.footer-conect-text {
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    color: var(--white-fon);
+}
+
+
+
+
+.footer-conect-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.footer-conect-form {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+}
