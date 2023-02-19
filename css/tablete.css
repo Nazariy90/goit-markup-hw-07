@@ -4,15 +4,29 @@
 
     }
 
+    .header-container {
+        align-items: center;
+    }
+
     /* hero-section */
     .hero-title {
         min-width: 496px;
+        height: 120px;
+        line-height: 1.07;
         font-size: 56px;
         margin-bottom: 40px;
     }
 
     .hero {
+        width: 768px;
         padding-bottom: 108px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tab1.jpg);
+        background-size: cover;
+        background-color: rgba(46, 47, 66, 0.7);
+
     }
 
     /* Advantages */
@@ -68,7 +82,13 @@
 
     .customers-list {
         padding: 0 30px;
-        column-gap: 16px;
+        gap: 0;
+        row-gap: 72px;
+        /* column-gap: 16px; */
+    }
+
+    .customers-list-item {
+        width: calc((100% - 48px) / 3);
     }
 
     .customers-list-link {
@@ -116,5 +136,105 @@
         width: 408px;
         padding-left: 25px;
         padding-right: 25px;
+    }
+
+    /* HEADER */
+
+    .list-header {
+        display: flex;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .logo {
+        padding-top: 0;
+        padding-bottom: 0;
+        line-height: 1.33;
+        margin-right: 120px;
+    }
+
+    .navigator:not(:last-child) {
+        margin-right: 40px;
+    }
+
+    .nav-link {
+        color: var(--nav-text-color);
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        display: block;
+        padding: 24px 0;
+        transition: color var(--efect-transmision);
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+        color: var(--color-404BBF);
+    }
+
+    .active {
+        position: relative;
+        color: var(--color-404BBF);
+    }
+
+    .active::after {
+        content: '';
+        display: block;
+        height: 4px;
+        border-radius: 2px;
+        width: 100%;
+        background-color: var(--color-404BBF);
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    }
+
+    /* address */
+    address {
+        display: block;
+        margin-left: auto;
+    }
+
+    .list-header-contact {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        padding-top: 24px;
+    }
+
+    .contact-link {
+        color: var(--p-text-color);
+        font-size: 12px;
+        line-height: 1.33;
+        letter-spacing: 0.04em;
+        font-style: normal;
+        transition: color var(--efect-transmision);
+    }
+
+    .contact-link:hover,
+    .contact-link:focus {
+        color: var(--color-404BBF);
+    }
+
+
+    /* MOBOLE MENU */
+    .mobile-menu-open {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) {
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tab2.jpg);
+        background-size: cover;
+        background-color: rgba(46, 47, 66, 0.7);
     }
 }

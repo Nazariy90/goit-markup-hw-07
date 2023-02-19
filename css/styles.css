@@ -43,89 +43,7 @@
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* ХЕДР ФЛЕКС */
-.header-container {
-    display: flex;
-    align-items: center;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.list-header {
-    display: flex;
-    align-items: center;
-    padding-left: 0;
-
-}
-
-.navigator:not(:last-child) {
-    margin-right: 40px;
-}
-
-.nav-link {
-    color: var(--nav-text-color);
-    font-weight: 500;
-    letter-spacing: 0.02em;
-    display: block;
-    padding: 24px 0;
-
-    transition: color var(--efect-transmision);
-}
-
-.nav-link:hover,
-.nav-link:focus {
-    color: var(--color-404BBF);
-}
-
-.active {
-    position: relative;
-    color: var(--color-404BBF);
-}
-
-.active::after {
-    content: '';
-    display: block;
-    height: 4px;
-    border-radius: 2px;
-    width: 100%;
-    background-color: var(--color-404BBF);
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-
-}
-
-
-address {
-    margin-left: auto;
-}
-
-.list-header-contact {
-
-    display: flex;
-    align-items: center;
-    padding: 0;
-}
-
-.contact-item:not(:last-child) {
-    margin-right: 40px;
-
-}
 
 
 /* ХEДР ФЛЕКС */
@@ -135,19 +53,9 @@ address {
 
 
 /* logo */
-.logo {
-    font-family: 'Raleway';
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.03em;
-    color: var(--nav-text-color);
-    margin-right: 76px;
-}
 
-.logo .logo-partone {
-    color: var(--blu-color);
-}
+
+
 
 /* logo footer */
 
@@ -156,24 +64,11 @@ address {
 
 
 /* хедр */
-.part-header {
-    border-bottom: 1px solid var(--color-E7E9FC);
-}
 
 
 
-.contact-link {
-    color: var(--p-text-color);
-    letter-spacing: 0.02em;
-    font-style: normal;
 
-    transition: color var(--efect-transmision);
-}
 
-.contact-link:hover,
-.contact-link:focus {
-    color: var(--color-404BBF);
-}
 
 
 /* Hero */

@@ -13,7 +13,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/vars.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablete.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
   </head>
 
   <body>
@@ -37,6 +42,12 @@
           </ul>
         </nav>
 
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon">
+            <use href="./images/icons.svg.svg#menu"></use>
+          </svg>
+        </button>
+
         <address>
           <ul class="list-header-contact">
             <li class="contact-item">
@@ -52,14 +63,85 @@
           </ul>
         </address>
       </div>
+
+      <div class="mobile-menu is-hidden js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon">
+              <use href="./images/icons.svg.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <!-- моб меню НАПОВНЕННЯ -->
+
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mob-address">
+            <li class="contact-item">
+              <a class="mob-address-lik tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="mob-address-list">
+              <a class="mob-address-lik email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="social-list menu">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
       <!--Портфоліо-->
-      <section class="portfolio">
-        <div class="container">
-          <!--Фільтр-->
-          <h1 class="visually-hidden">Portfolio</h1>
+      <!-- <section class="portfolio">
+        <div class="container"> -->
+      <!--Фільтр-->
+      <!-- <h1 class="visually-hidden">Portfolio</h1>
 
           <ul class="list-button">
             <li class="button-item">
@@ -77,11 +159,11 @@
             <li class="button-item">
               <button class="button" type="button">Marketing</button>
             </li>
-          </ul>
+          </ul> -->
 
-          <!--Меню-->
+      <!--Меню-->
 
-          <ul class="project-list">
+      <!-- <ul class="project-list">
             <li class="project-item">
               <a href="" class="project-link">
                 <div class="img-overlay">
@@ -236,11 +318,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Футер -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-block">
         <div class="logo-block">
           <a href="" class="logo-footer">
@@ -285,10 +367,10 @@
               </a>
             </li>
           </ul>
-        </div>
-        <!-- footer-conect -->
+        </div> -->
+    <!-- footer-conect -->
 
-        <div class="footer-conect">
+    <!-- <div class="footer-conect">
           <p class="footer-conect-text">Subscribe</p>
           <form class="footer-conect-form">
             <input
@@ -308,6 +390,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

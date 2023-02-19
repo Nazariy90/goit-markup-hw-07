@@ -24,7 +24,7 @@
   <body>
     <!--Шапка сайту-->
 
-    <!-- <header class="part-header">
+    <header class="part-header">
       <div class="container header-container">
         <nav class="nav">
           <a href="" class="logo"
@@ -33,14 +33,20 @@
 
           <ul class="list-header">
             <li class="navigator">
-              <a class="nav-link line active" href="./index.html">Studio</a>
+              <a class="nav-link active" href="./index.html">Studio</a>
             </li>
             <li class="navigator">
-              <a class="nav-link line" href="./portfolio.html">Portfolio</a>
+              <a class="nav-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="navigator"><a class="nav-link" href="">Contacts</a></li>
           </ul>
         </nav>
+
+        <button type="button" class="mobile-menu-open js-open-menu">
+          <svg class="mobile-menu-open-icon">
+            <use href="./images/icons.svg.svg#menu"></use>
+          </svg>
+        </button>
 
         <address>
           <ul class="list-header-contact">
@@ -57,7 +63,78 @@
           </ul>
         </address>
       </div>
-    </header> -->
+
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close-btn js-close-menu">
+            <svg class="mobile-menu-close-icon">
+              <use href="./images/icons.svg.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+
+          <!-- моб меню НАПОВНЕННЯ -->
+
+          <ul class="mobile-menu-list">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./index.html">Studio</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="./portfolio.html">Portfolio</a>
+            </li>
+
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-link" href="">Contacts</a>
+            </li>
+          </ul>
+
+          <ul class="mob-address">
+            <li class="contact-item">
+              <a class="mob-address-lik tel" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+
+            <li class="mob-address-list">
+              <a class="mob-address-lik email" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+
+          <ul class="social-list menu">
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-instagram-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list-item">
+              <a href="" class="social-list-link">
+                <svg class="social-list-icon">
+                  <use href="./images/icons.svg.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
     <main>
       <!-- Герой -->
@@ -138,15 +215,30 @@
 
           <ul class="services-list">
             <li class="services-item">
-              <img src="./images/imag1.jpg" alt="computer" width="360" />
+              <img
+                srcset="./images/imag1.jpg 1x, ./images/2comp.jpg 2x"
+                src="./images/imag1.jpg"
+                alt="computer"
+                width="360"
+              />
             </li>
 
             <li class="services-item">
-              <img src="./images/imag2.jpg" alt="computer" width="360" />
+              <img
+                srcset="./images/imag2.jpg 1x, ./images/2tel.jpg 2x"
+                src="./images/imag2.jpg"
+                alt="computer"
+                width="360"
+              />
             </li>
 
             <li class="services-item">
-              <img src="./images/imag3.jpg" alt="computer" width="360" />
+              <img
+                srcset="./images/imag3.jpg 1x, ./images/2telcomp.jpg 2x"
+                src="./images/imag3.jpg"
+                alt="computer"
+                width="360"
+              />
             </li>
           </ul>
         </div>
@@ -160,7 +252,12 @@
 
           <ul class="team-list">
             <li class="team-item">
-              <img src="./images/photo1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/photo1.jpg 1x, ./images/imgMark_2x.jpg 2x"
+                src="./images/photo1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-box">
                 <h3 class="team-title">Mark Guerrero</h3>
                 <p class="team-position">Product Designer</p>
@@ -205,7 +302,12 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/photo2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/photo2.jpg 1x, ./images/imgTom_2x.jpg 2x"
+                src="./images/photo2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-box">
                 <h3 class="team-title">Tom Ford</h3>
                 <p class="team-position">Frontend Developer</p>
@@ -250,7 +352,12 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/photo3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/photo3.jpg 1x, ./images/imgCamila_2x.jpg 2x"
+                src="./images/photo3.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-box">
                 <h3 class="team-title">Camila Garcia</h3>
                 <p class="team-position">Marketing</p>
@@ -295,7 +402,12 @@
             </li>
 
             <li class="team-item">
-              <img src="./images/photo4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/photo4.jpg 1x, ./images/imgDaniel_2x.jpg 2x"
+                src="./images/photo4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-box">
                 <h3 class="team-title">Daniel Wilson</h3>
                 <p class="team-position">UI Designer</p>
@@ -552,6 +664,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
