@@ -596,6 +596,7 @@
 
 .privacy-link {
     text-decoration: underline;
+    text-decoration-color: var(--blu-color);
 }
 
 .modal-form-link {
@@ -734,6 +735,14 @@ address {
 
 /* моб меню НАПОВНЕЕНЯ */
 
+.mobile-menu-foot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
 .mobile-menu-list {
     display: flex;
     flex-direction: column;
@@ -758,7 +767,7 @@ address {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 210px;
+    /* margin-top: 210px; */
 }
 
 .tel {
