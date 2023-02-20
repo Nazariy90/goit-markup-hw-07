@@ -712,10 +712,19 @@ address {
 
 .mobile-menu-container {
     position: relative;
-    padding-top: 80px;
+    max-width: 100vw;
+    /*padding-top: 80px;*/
     /* padding-right: 60px;
     padding-bottom: 40px;
     padding-left: 40px; */
+}
+
+.mobile-menu-wrapper {
+    height: 100vh;
+    padding: 80px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mobile-menu-close-btn {
@@ -735,14 +744,6 @@ address {
 
 /* моб меню НАПОВНЕЕНЯ */
 
-.mobile-menu-foot {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-
-}
-
 .mobile-menu-list {
     display: flex;
     flex-direction: column;
@@ -758,6 +759,10 @@ address {
     transition: color var(--efect-transmision);
 }
 
+.contacts-color {
+    color: var(--color-404BBF);
+}
+
 .mobile-menu-link:hover,
 .mobile-menu-link:focus {
     color: var(--color-404BBF);
@@ -767,7 +772,7 @@ address {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    /* margin-top: 210px; */
+    /*margin-top: 210px;*/
 }
 
 .tel {
@@ -788,9 +793,9 @@ address {
 .menu {
     margin-top: 48px;
     padding-left: 40px;
-    padding-right: 60px;
+    padding-right: 40px;
     justify-content: space-between;
-    gap: 56px;
+    /* gap: 56px; */
 
 }
 
