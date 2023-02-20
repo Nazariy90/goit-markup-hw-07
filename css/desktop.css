@@ -137,6 +137,7 @@
     }
 
     .customers-list-link {
+        width: 168px;
         transition: border var(--efect-transmision);
     }
 
@@ -162,6 +163,7 @@
     }
 
     .footer-block {
+        align-items: flex-start;
         flex-direction: row;
     }
 
@@ -201,7 +203,8 @@
     /* modal window */
 
     .modal {
-        width: 516px;
+        width: 408px;
+        height: 584px;
         padding-left: 25px;
         padding-right: 25px;
     }

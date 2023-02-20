@@ -6,6 +6,7 @@
 
     .header-container {
         align-items: center;
+        padding-right: 0;
     }
 
     /* hero-section */
@@ -65,8 +66,14 @@
     }
 
     .team-item {
-        margin-left: auto;
-        margin-right: auto;
+
+        margin-left: 0;
+        margin-right: 0;
+        /* margin-left: auto;
+        margin-right: auto; */
+
+
+
         /* width: calc((100% - 24px) / 2); */
     }
 
@@ -76,6 +83,7 @@
         gap: 0;
         row-gap: 64px;
         column-gap: 24px;
+        justify-content: center;
     }
 
     /* customers */
@@ -92,7 +100,7 @@
     }
 
     .customers-list-link {
-        width: 168px;
+        /* width: 168px; */
     }
 
     /* FOOTER */

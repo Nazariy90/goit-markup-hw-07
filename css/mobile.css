@@ -382,6 +382,13 @@
     color: var(--white-fon);
 }
 
+.footer-conect-input::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-conect-button {
     display: flex;
     justify-content: center;
@@ -751,12 +758,12 @@ address {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    margin-top: 284px;
+    margin-top: 210px;
 }
 
 .tel {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 1.11;
     color: var(--blu-color);
 }
@@ -803,7 +810,7 @@ address {
     }
 
     .hero {
-        width: 428px;
+        /* width: 428px; */
         margin-left: auto;
         margin-right: auto;
         padding-top: 112px;
